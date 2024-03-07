@@ -5,7 +5,7 @@
 ## How use
 #### 1. Clone repo
 ```bash
-git clone 
+git clone https://github.com/josiasmartins/tree-api-spring.git
 ```
 
 #### 2. install mysql and execute code above
