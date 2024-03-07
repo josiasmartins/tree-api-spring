@@ -2,15 +2,19 @@ package com.josiasmartins.forest.domain.entity;
 
 import com.josiasmartins.forest.domain.entity.models.TreeDTO;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+//@AllArgsConstructor
+@NoArgsConstructor
 @Entity
-@Table(name = "arvore")
+@Table(name = "tree")
 public class Tree {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_tree")
     private Integer id;
 
