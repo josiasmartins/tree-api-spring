@@ -41,7 +41,7 @@ http://localhost:8080/tree
 ## How request for terminal
 #### POST
 ```bash
-curl -X POST \
+curl -X 'POST' \
   -H "Content-Type: application/json" \
   -d '{"name": "siinza", "typeTree": "tropical"}' \
   http://localhost:8080/tree
@@ -49,12 +49,12 @@ curl -X POST \
 ```
 #### GET
 ```bash
-curl -H "Content-Type: application/json" http://localhost:8080/tree/1
+curl -X 'GET' -H "Content-Type: application/json" http://localhost:8080/tree/1
 ```
 
 #### GET ALL
 ```bash
-curl -H "Content-Type: application/json" http://localhost:8080/tree
+curl -X 'GET' -H "Content-Type: application/json" http://localhost:8080/tree
 ```
 
 
