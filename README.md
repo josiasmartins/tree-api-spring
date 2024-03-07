@@ -52,6 +52,11 @@ curl -X POST \
 curl -H "Content-Type: application/json" http://localhost:8080/tree/1
 ```
 
+#### GET ALL
+```bash
+curl -H "Content-Type: application/json" http://localhost:8080/tree
+```
+
 
 ### swagger
  http://localhost:8080/swagger-ui/index.html
