@@ -25,4 +25,25 @@ CREATE TABLE tree(
 
 ### swagger
  http://localhost:8080/swagger-ui/index.html
+
+### Cors | How fixed cors
+
+```java
+@Configuration
+public class CorsConf {
+
+    @Bean
+    WebMvcConfigurer corsConfiguration() {
+        return new WebMvcConfigurer() {
+          @Override
+          public void addCorsMappings(CorsRegistry registry) {
+            registry.addMapping("/**")
+                    .allowedMethods("GET", "POST", "PUT", "DELETE")
+                    .allowedOrigins("*");
+          }
+        };
+    }
+
+}
+```
  
