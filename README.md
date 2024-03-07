@@ -23,6 +23,22 @@ CREATE TABLE tree(
 
 ```
 
+## How use with docker
+
+##### 1. Create imagem
+```bash
+    docker build -t josiasmartins/tree_api_spring .
+```
+##### 2. Create container and run
+```bash
+    docker run --name springdockercontainer -p 8081:8080 josiasmartins/tree_api_spring
+```
+#### 3. Access api 
+```bash
+http://localhost:8080/tree
+```
+
+
 ### swagger
  http://localhost:8080/swagger-ui/index.html
 
