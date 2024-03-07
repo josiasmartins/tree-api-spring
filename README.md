@@ -38,6 +38,16 @@ CREATE TABLE tree(
 http://localhost:8080/tree
 ```
 
+## How request for terminal
+#### POST
+```bash
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -d '{"name": "siinza", "typeTree": "tropical"}' \
+  http://localhost:8080/tree
+
+```
+
 
 ### swagger
  http://localhost:8080/swagger-ui/index.html
