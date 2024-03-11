@@ -1,4 +1,4 @@
-FROM maven:3.8.4-jdk-11 as build
+FROM maven:3.8.5-openjdk-17 as build
 # cria uma pasta build
 WORKDIR /build
 # copia tudo para a pasta  build
@@ -7,7 +7,7 @@ COPY . .
 RUN mvn clean package -DsskipTests
 
 # dependencie java (imagem)
-FROM openjdk:11
+FROM openjdk:17
 WORKDIR /app
 
 # copia o arquivo do jar para o WORDIR /app/application.jar
