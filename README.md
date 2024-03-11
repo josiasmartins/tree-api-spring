@@ -25,13 +25,13 @@ CREATE TABLE tree(
 
 ## How use with docker
 
-##### 1. Create imagem
+##### 1. Pull image tree_api_spring
 ```bash
-    docker build -t josiasmartins/tree_api_spring .
+    docker pull josiasmartins/tree_api_spring
 ```
 ##### 2. Create container and run
 ```bash
-    docker run --name springdockercontainer -p 8081:8080 josiasmartins/tree_api_spring
+    docker run -p 8080:8080 josiasmartins/tree_api_spring
 ```
 #### 3. Access api 
 ```bash
@@ -41,7 +41,7 @@ http://localhost:8080/tree
 ## How request for terminal
 #### POST
 ```bash
-curl -X POST \
+curl -X 'POST' \
   -H "Content-Type: application/json" \
   -d '{"name": "siinza", "typeTree": "tropical"}' \
   http://localhost:8080/tree
@@ -49,12 +49,12 @@ curl -X POST \
 ```
 #### GET
 ```bash
-curl -H "Content-Type: application/json" http://localhost:8080/tree/1
+curl -X 'GET' -H "Content-Type: application/json" http://localhost:8080/tree/1
 ```
 
 #### GET ALL
 ```bash
-curl -H "Content-Type: application/json" http://localhost:8080/tree
+curl -X 'GET' -H "Content-Type: application/json" http://localhost:8080/tree
 ```
 
 
