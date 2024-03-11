@@ -59,7 +59,10 @@ curl -X 'GET' -H "Content-Type: application/json" http://localhost:8080/tree
 
 
 ### swagger
- http://localhost:8080/swagger-ui/index.html
+```bash
+http://localhost:8080/swagger-ui/index.html
+```
+
 
 ### Cors | How fixed cors
 
