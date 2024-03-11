@@ -11,7 +11,7 @@ FROM openjdk:11
 WORKDIR /app
 
 # copia o arquivo do jar para o WORDIR /app/application.jar
-COPY --from-build ./build/target/*jar ./application.jar
+COPY --from=build ./build/target/*jar ./application.jar
 # porta da imagem
 EXPOSE 8080
 # comando para executar o projeto
